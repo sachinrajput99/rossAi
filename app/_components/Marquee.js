@@ -1,0 +1,150 @@
+"use client";
+import { motion } from "framer-motion";
+import FancyButton from "./FancyButton";
+
+const testimonials = [
+  {
+    logo: "https://via.placeholder.com/80x40?text=Retell+AI",
+    text: "We recently moved from a homegrown WebSocket stack to LiveKit Cloud, allowing us to flexibly integrate with telephony systems and offer a unified export interface across web and phone calls.",
+    name: "Zexia Zhang",
+    username: "CTO, Retell AI",
+  },
+  {
+    logo: "https://via.placeholder.com/80x40?text=Playback",
+    text: "Not having to worry about our ability to scale has been massive. We just have LiveKit worry about that scaling for us and have a predictable cost.",
+    name: "Ari Borensztein",
+    username: "Co-founder & CTO, Playback",
+  },
+  {
+    logo: "https://via.placeholder.com/80x40?text=Voice",
+    text: "Infrastructure for realtime voice assistants. The demo is 🔥",
+    name: "Guillermo Rauch",
+    username: "@rauchg",
+  },
+  {
+    logo: "https://via.placeholder.com/80x40?text=LiveKit",
+    text: "damn @livekit python sdk for tts and set was so smooth",
+    name: "Ivan Leo",
+    username: "@ivanleomk",
+  },
+  {
+    logo: "https://via.placeholder.com/80x40?text=Customer",
+    text: "LiveKit has a lot to offer. One of the best platforms for real-time AI integrations.",
+    name: "Mojibola Olalekan",
+    username: "@Ola_dev01",
+  },
+];
+
+export default function Marquee() {
+  return (
+    <div>
+      {" "}
+      {/* Heading */}
+      <motion.h3
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        classNameName="text-white text-3xl md:text-4xl text-center mb-12 font-light"
+        style={{ fontFamily: '"Poppins", sans-serif' }}
+      >
+        {/* new code  */}
+        <div className="px-6 bg-black pt-12">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="flex flex-col gap-6 md:flex-row md:justify-between">
+              <div className="space-y-2 text-white">
+                <div className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gray-300">
+                  Chosen by Innovators
+                </div>
+                <h2 className="z-20 tracking-tight lg:text-4xl text-3xl font-light">
+                  <span>From </span>
+                  <span className="text-cyan-400 drop-shadow-[0_0_8px_rgb(0,200,255)]">
+                    startups
+                  </span>
+                  <span> to </span>
+                  <span className="text-cyan-400 drop-shadow-[0_0_8px_rgb(0,200,255)]">
+                    industry giants
+                  </span>
+                </h2>
+              </div>
+
+              <div className="w-full md:w-auto md:self-end">
+                {/* <a
+                  href="/customers"
+                  className="flex items-center justify-center gap-2 rounded-md px-5 py-2 text-sm font-semibold text-black bg-cyan-400 hover:bg-cyan-300 transition shadow-[0_0_12px_rgba(0,200,255,0.8)]"
+                >
+                  View all customers
+                </a> */}
+                <FancyButton
+                  buttonName=" View all customers"
+                  showIcon={false}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.h3>
+      <div classNameName="relative w-full overflow-hidden bg-[#0d0d0d] pb-16">
+        {/* Marquee */}
+        <div classNameName="marquee-container">
+          <motion.div
+            classNameName="marquee-content flex flex-row"
+            initial={{ x: 0 }}
+            animate={{ x: "-50%" }}
+            transition={{
+              repeat: Infinity,
+              ease: "linear",
+              duration: 40, // slower for smoother scroll
+            }}
+          >
+            {[...testimonials, ...testimonials].map((item, index) => (
+              <div
+                key={index}
+                classNameName="bg-black border  border-gray-800 rounded-xl p-6 mx-4 w-96 flex-shrink-0 shadow-lg"
+              >
+                {item.logo && (
+                  <img
+                    src={item.logo}
+                    alt="logo"
+                    classNameName="h-6 mb-4 object-contain"
+                  />
+                )}
+                <p classNameName="text-gray-300 text-sm mb-4">{item.text}</p>
+                <p classNameName="text-white font-semibold">{item.name}</p>
+                <p classNameName="text-gray-500 text-sm">{item.username}</p>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* Gradient Masks */}
+        <div
+          classNameName="absolute top-0 left-0 h-full w-[120px] pointer-events-none z-10"
+          style={{
+            background:
+              "linear-gradient(to right, #0d0d0d 0%, transparent 100%)",
+          }}
+        />
+        <div
+          classNameName="absolute top-0 right-0 h-full w-[120px] pointer-events-none z-10"
+          style={{
+            background:
+              "linear-gradient(to left, #0d0d0d 0%, transparent 100%)",
+          }}
+        />
+
+        {/* Styles */}
+        <style jsx>{`
+          .marquee-container {
+            width: 100%;
+            overflow: hidden;
+          }
+          .marquee-content {
+            display: flex;
+            flex-direction: row;
+            width: max-content;
+          }
+        `}</style>
+      </div>
+    </div>
+  );
+}
