@@ -1,28 +1,8 @@
+"use client"
+
 import React, { useEffect, useRef } from 'react';
 import { FileText, Search, Brain } from 'lucide-react';
 
-const steps = [
-  {
-    title: "User connects with agent via app, browser, or phone call",
-    desc: "The conversation starts when the user connects with the agent through the app, browser, or a phone call.",
-    img: "https://via.placeholder.com/400x300?text=Step+1",
-  },
-  {
-    title: "User's voice is streamed from device to agent",
-    desc: "Voice, video, and text data travel via WebRTC through LiveKit’s global edge network with under 100ms latency.",
-    img: "https://via.placeholder.com/400x300?text=Step+2",
-  },
-  {
-    title: "Agent receives user's voice and applies business logic",
-    desc: "The agent processes the user's input, applies your defined business logic, and prepares an appropriate response.",
-    img: "https://via.placeholder.com/400x300?text=Step+3",
-  },
-  {
-    title: "Agent responds to the user",
-    desc: "The agent replies to the user in real-time to ensure a smooth and natural conversation.",
-    img: "https://via.placeholder.com/400x300?text=Step+4",
-  },
-];
 
 const AILegalOS = () => {
   const visualRef = useRef(null);
@@ -54,7 +34,7 @@ const AILegalOS = () => {
           <p className="text-blue-400 text-sm font-semibold tracking-wider uppercase mb-4">
             The AI Legal OS
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl text-white md:text-5xl font-bold mb-6">
             An Integrated Command Center for Your Entire Practice
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -122,27 +102,7 @@ const AILegalOS = () => {
           </div>
         </div>
 
-        {/* Steps Section */}
-        <div className="space-y-16">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row items-center gap-10 bg-zinc-900/50 p-6 rounded-lg border border-zinc-800"
-            >
-              <img
-                src={step.img}
-                alt={`Step ${index + 1}`}
-                className="w-full md:w-1/2 rounded shadow"
-              />
-              <div className="md:w-1/2">
-                <h3 className="text-2xl font-semibold mb-3 text-blue-400">
-                  {step.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">{step.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+     
       </div>
     </section>
   );

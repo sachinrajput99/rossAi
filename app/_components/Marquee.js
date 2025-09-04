@@ -44,7 +44,7 @@ export default function Marquee() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        classNameName="text-white text-3xl md:text-4xl text-center mb-12 font-light"
+        className="text-white text-3xl md:text-4xl text-center mb-12 font-light"
         style={{ fontFamily: '"Poppins", sans-serif' }}
       >
         {/* new code  */}
@@ -83,11 +83,11 @@ export default function Marquee() {
           </div>
         </div>
       </motion.h3>
-      <div classNameName="relative w-full overflow-hidden bg-[#0d0d0d] pb-16">
+      <div className="relative w-full overflow-hidden bg-[#0d0d0d] pb-16">
         {/* Marquee */}
-        <div classNameName="marquee-container">
+        <div className="marquee-container">
           <motion.div
-            classNameName="marquee-content flex flex-row"
+            className="marquee-content flex flex-row"
             initial={{ x: 0 }}
             animate={{ x: "-50%" }}
             transition={{
@@ -99,18 +99,18 @@ export default function Marquee() {
             {[...testimonials, ...testimonials].map((item, index) => (
               <div
                 key={index}
-                classNameName="bg-black border  border-gray-800 rounded-xl p-6 mx-4 w-96 flex-shrink-0 shadow-lg"
+                className="bg-black border  border-gray-800 rounded-xl p-6 mx-4 w-96 flex-shrink-0 shadow-lg"
               >
                 {item.logo && (
                   <img
                     src={item.logo}
                     alt="logo"
-                    classNameName="h-6 mb-4 object-contain"
+                    className="h-6 mb-4 object-contain"
                   />
                 )}
-                <p classNameName="text-gray-300 text-sm mb-4">{item.text}</p>
-                <p classNameName="text-white font-semibold">{item.name}</p>
-                <p classNameName="text-gray-500 text-sm">{item.username}</p>
+                <p className="text-gray-300 text-sm mb-4">{item.text}</p>
+                <p className="text-white font-semibold">{item.name}</p>
+                <p className="text-gray-500 text-sm">{item.username}</p>
               </div>
             ))}
           </motion.div>
@@ -118,14 +118,14 @@ export default function Marquee() {
 
         {/* Gradient Masks */}
         <div
-          classNameName="absolute top-0 left-0 h-full w-[120px] pointer-events-none z-10"
+          className="absolute top-0 left-0 h-full w-[120px] pointer-events-none z-10"
           style={{
             background:
               "linear-gradient(to right, #0d0d0d 0%, transparent 100%)",
           }}
         />
         <div
-          classNameName="absolute top-0 right-0 h-full w-[120px] pointer-events-none z-10"
+          className="absolute top-0 right-0 h-full w-[120px] pointer-events-none z-10"
           style={{
             background:
               "linear-gradient(to left, #0d0d0d 0%, transparent 100%)",
