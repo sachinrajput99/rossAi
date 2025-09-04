@@ -4,80 +4,125 @@ import React from "react";
 
 // Data structure for the footer links. This is an efficient way to
 // manage the content.
+// const footerLinksData = [
+//   {
+//     title: "Product",
+//     links: [
+//       {
+//         label: "Agents",
+//         href: "#",
+//         target: "_blank",
+//       },
+//       {
+//         label: "Media server",
+//         href: "#",
+//         target: "_blank",
+//       },
+//       {
+//         label: "SDKs",
+//         href: "#",
+//         target: "_blank",
+//       },
+//       {
+//         label: "Cloud dashboard",
+//         href: "#",
+//         target: "_blank",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Developers",
+//     links: [
+//       {
+//         label: "Documentation",
+//         href: "#",
+//         target: "_blank",
+//       },
+//       { label: "Security", href: "#" },
+//       {
+//         label: "LLMs.txt",
+//         href: "#",
+//         target: "_blank",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Resources",
+//     links: [
+//       { label: "Brand assets", href: "#" },
+//       { label: "Video codecs", href: "#" },
+//       { label: "Codec bitrates", href: "#" },
+//       { label: "WebRTC browser test", href: "#" },
+//       { label: "Connection test", href: "#" },
+//     ],
+//   },
+//   {
+//     title: "Solutions",
+//     links: [
+//       { label: "Robotics", href: "#" },
+//       { label: "Livestreaming", href: "#" },
+//       { label: "Video conferencing", href: "#" },
+//     ],
+//   },
+//   {
+//     title: "Company",
+//     links: [
+//       { label: "Blog", href: "#", target: "_blank" },
+//       { label: "Careers", href: "#" },
+//       { label: "About", href: "#" },
+//       {
+//         label: "Open source",
+//         href: "#",
+//         target: "_blank",
+//       },
+//     ],
+//   },
+// ];
 const footerLinksData = [
   {
     title: "Product",
     links: [
-      {
-        label: "Agents",
-        href: "#",
-        target: "_blank",
-      },
-      {
-        label: "Media server",
-        href: "#",
-        target: "_blank",
-      },
-      {
-        label: "SDKs",
-        href: "#",
-        target: "_blank",
-      },
-      {
-        label: "Cloud dashboard",
-        href: "#",
-        target: "_blank",
-      },
-    ],
-  },
-  {
-    title: "Developers",
-    links: [
-      {
-        label: "Documentation",
-        href: "#",
-        target: "_blank",
-      },
-      { label: "Security", href: "#" },
-      {
-        label: "LLMs.txt",
-        href: "#",
-        target: "_blank",
-      },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Brand assets", href: "#" },
-      { label: "Video codecs", href: "#" },
-      { label: "Codec bitrates", href: "#" },
-      { label: "WebRTC browser test", href: "#" },
-      { label: "Connection test", href: "#" },
+      { label: "AI Assistant", href: "#" },
+      { label: "Legal Research", href: "#" },
+      { label: "Strategic Analytics", href: "#" },
+      { label: "Workflow Automation", href: "#" },
+      { label: "Integrations", href: "#" },
+      { label: "Pricing", href: "#" },
     ],
   },
   {
     title: "Solutions",
     links: [
-      { label: "Robotics", href: "#" },
-      { label: "Livestreaming", href: "#" },
-      { label: "Video conferencing", href: "#" },
+      { label: "Small Law Firms", href: "#" },
+      { label: "Mid-Sized Firms", href: "#" },
+      { label: "Litigation Teams", href: "#" },
+      { label: "Transactional Teams", href: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Blog", href: "#" },
+      { label: "Customer Stories", href: "#" },
+      { label: "Documentation", href: "#" },
+      { label: "Security Center", href: "#" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "Blog", href: "#", target: "_blank" },
+      { label: "About Us", href: "#" },
       { label: "Careers", href: "#" },
-      { label: "About", href: "#" },
-      {
-        label: "Open source",
-        href: "#",
-        target: "_blank",
-      },
+      { label: "Investors", href: "#" },
+      { label: "Contact Us", href: "#" },
     ],
   },
+  {
+    title: "Ross AI",
+    links: [],
+  },
 ];
+
 
 // A reusable component for the LiveKit logo SVG.
 const LiveKitLogo = () => (
@@ -183,10 +228,10 @@ const Footer = () => {
               {/* Using the new LiveKitLogo component */}
               <LiveKitLogo />
             </a>
-            <p className="text-balance text-sm text-[#A0A3A8]">
-              The open source framework and cloud platform
-              <br className="lg:hidden" /> for voice, video, and physical AI
-              agents.
+            {/* <p className="text-balance text-sm text-[#A0A3A8]"> */}
+            <p className=" text-sm text-[#A0A3A8]">
+             AI-powered solutions transforming the legal industry.
+              
             </p>
             <div className="space-y-3">
               <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#A0A3A8]">
@@ -216,7 +261,7 @@ const Footer = () => {
         <div className="mt-16 flex flex-col gap-3 border-t border-[#26282E] pt-3 text-xs text-[#A0A3A8] lg:flex-row lg:justify-between">
           <div className="flex flex-col flex-wrap gap-3 lg:flex-row lg:gap-1">
             <p>
-              &copy; 2025 LiveKit. Engineered and designed worldwide.
+              &copy; 2025 RossAi. Engineered and designed worldwide.
               <br className="md:hidden" /> All rights reserved.
             </p>
             <div className="mr-4 whitespace-nowrap">

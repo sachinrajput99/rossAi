@@ -48,7 +48,7 @@ export default function Marquee() {
         style={{ fontFamily: '"Poppins", sans-serif' }}
       >
         {/* new code  */}
-        <div className="px-6 bg-black pt-12">
+        <div className="px-6 bg-black  pt-12">
           <div className="mx-auto w-full max-w-7xl">
             <div className="flex flex-col gap-6 md:flex-row md:justify-between">
               <div className="space-y-2 text-white">
@@ -83,7 +83,7 @@ export default function Marquee() {
           </div>
         </div>
       </motion.h3>
-      <div className="relative w-full overflow-hidden bg-[#0d0d0d] pb-16">
+      <div className="relative w-full overflow-hidden bg-black rounded pb-16">
         {/* Marquee */}
         <div className="marquee-container">
           <motion.div
