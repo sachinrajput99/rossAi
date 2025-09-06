@@ -27,9 +27,9 @@ const Differentiators = () => {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
+        {/* <h2 className="text-4xl text-white md:text-5xl font-bold text-center mb-20">
           Enterprise Power, Accessible to Everyone
-        </h2>
+        </h2> */}
 
         <div className="relative">
           {/* Central Globe */}

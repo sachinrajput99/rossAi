@@ -1,12 +1,15 @@
 // components/TrustedBy.js
 
 const brands = [
-  { name: "Tinder", src: "/logos/tinder.svg", height: "h-[1.2rem]" },
-  { name: "Portola", src: "/logos/portola.svg", height: "h-[1.45rem]" },
-  { name: "HeyGen", src: "/logos/heygen.svg", height: "h-[1.45rem]" },
-  { name: "ElevenLabs", src: "/logos/elevenlabs.svg", height: "h-[1.2rem]" },
-  { name: "Oracle", src: "/logos/oracle.svg", height: "h-[0.8rem]" },
-
+  {
+    name: "open ai embedding ",
+    src: "/logos/open-ai.svg",
+    height: "h-[1.2rem]",
+  },
+  { name: "Llama", src: "/logos/llama.png", height: "h-[8.45rem]" },
+  { name: "Pinecone", src: "/logos/pinecone.png", height: "h-[3rem]" },
+  { name: "Chatgpt", src: "/logos/chatgpt.png", height: "h-[3rem]" },
+  { name: "Langchain", src: "/logos/langchain.png", height: "h-[2.5rem]" },
 ];
 
 export default function TrustedBy() {

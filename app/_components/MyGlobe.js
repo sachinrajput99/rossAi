@@ -621,7 +621,7 @@ export default function FancyGlobe() {
       {/* Globe + Stats */}
       <div className="relative flex items-center justify-center min-h-screen bg-black overflow-hidden text-white">
         {/* Left Stats */}
-        <div className="absolute left-10 top-1/2 -translate-y-1/2 space-y-6 text-gray-300">
+        {/* <div className="absolute left-10 top-1/2 -translate-y-1/2 space-y-6 text-gray-300">
           <div>
             <p>GDPR ✓</p>
             <p>SOC 2 TYPE 2 ✓</p>
@@ -643,7 +643,7 @@ export default function FancyGlobe() {
             <p className="text-xl font-bold">3,000,000,000+</p>
             <p>CALLS ANNUALLY</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Center Globe */}
         <div className="relative z-10 w-[700px] h-[700px] flex items-center justify-center">

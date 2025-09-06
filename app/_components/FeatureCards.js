@@ -1,10 +1,103 @@
 "use client";
 
+// const features = [
+//   {
+//     title: "Voice AI quickstart",
+//     desc: "Build a simple voice agent with Python in less than 10 minutes.",
+// //     href: "https://docs.livekit.io/agents/start/voice-ai/",
+//     icon: (
+//       <svg
+//         width="24"
+//         height="24"
+//         viewBox="0 0 24 24"
+//         fill="none"
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="h-5 w-5"
+//       >
+//         <path
+//           d="M7.75 3.75V20.25M3.75 9.75V14.25M12 7.75V16.25M16.25 5.75V18.25M20.25 9.75V14.25"
+//           stroke="currentColor"
+//           strokeWidth="1.5"
+//           strokeLinecap="square"
+//         />
+//       </svg>
+//     ),
+//   },
+//   {
+//     title: "Voice agent starter apps",
+//     desc: "Bring your agent to life through a web or mobile app.",
+// //     href: "https://docs.livekit.io/agents/start/frontend/#starter-apps",
+//     icon: (
+//       <svg
+//         width="24"
+//         height="24"
+//         viewBox="0 0 24 24"
+//         fill="none"
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="h-5 w-5"
+//       >
+//         <path
+//           d="M3 10.75H21M3 5H21.5V19.5H3V5Z"
+//           stroke="currentColor"
+//           strokeWidth="1.5"
+//         />
+//         <path
+//           d="M5.75 8.375C6.09518 8.375 6.375 8.09518 6.375 7.75C6.375 7.40482 6.09518 7.125 5.75 7.125C5.40482 7.125 5.125 7.40482 5.125 7.75C5.125 8.09518 5.40482 8.375 5.75 8.375ZM8.25 8.375C8.59518 8.375 8.875 8.09518 8.875 7.75C8.875 7.40482 8.59518 7.125 8.25 7.125C7.90482 7.125 7.625 7.40482 7.625 7.75C7.625 8.09518 7.90482 8.375 8.25 8.375ZM10.75 8.375C11.0952 8.375 11.375 8.09518 11.375 7.75C11.375 7.40482 11.0952 7.125 10.75 7.125C10.4048 7.125 10.125 7.40482 10.125 7.75C10.125 8.09518 10.4048 8.375 10.75 8.375Z"
+//           fill="currentColor"
+//           stroke="currentColor"
+//           strokeWidth="0.25"
+//         />
+//       </svg>
+//     ),
+//   },
+//   {
+//     title: "Integrate with telephony",
+//     desc: "Enable your voice agent to make or take phone calls.",
+// //     href: "https://docs.livekit.io/agents/start/telephony/",
+//     icon: (
+//       <svg
+//         width="24"
+//         height="24"
+//         viewBox="0 0 24 24"
+//         fill="none"
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="h-5 w-5"
+//       >
+//         <path
+//           d="M8.90625 3.75H3.75V5.8125C3.75 13.7861 10.2139 20.25 18.1875 20.25H20.25V15.0938L16.125 13.0312L14.5781 14.5781C12 13.5469 10.4531 12 9.42188 9.42188L10.9688 7.875L8.90625 3.75Z"
+//           stroke="currentColor"
+//           strokeWidth="1.5"
+//         />
+//       </svg>
+//     ),
+//   },
+//   {
+//     title: "Deploy to LiveKit Cloud",
+//     desc: "Run your agents on LiveKit's global realtime infrastructure.",
+// //     href: "https://docs.livekit.io/agents/ops/deployment/",
+//     icon: (
+//       <svg
+//         width="24"
+//         height="24"
+//         viewBox="0 0 24 24"
+//         fill="none"
+//         xmlns="http://www.w3.org/2000/svg"
+//         className="h-5 w-5"
+//       >
+//         <path
+//           d="M7 3.75V7M7 7V10.25M7 7H3.75M7 7H10.25M19.2981 14.7019L17 17M17 17L14.7019 19.2981M17 17L14.7019 14.7019M17 17L19.2981 19.2981M17 10.25C15.2051 10.25 13.75 8.79493 13.75 7C13.75 5.20507 15.2051 3.75 17 3.75C18.7949 3.75 20.25 5.20507 20.25 7C20.25 8.79493 18.7949 10.25 17 10.25ZM3.75 13.75H10.25V20.25H3.75V13.75Z"
+//           stroke="currentColor"
+//           strokeWidth="1.5"
+//           strokeLinecap="square"
+//         />
+//       </svg>
+//     ),
+//   },
+// ];
 const features = [
   {
-    title: "Voice AI quickstart",
-    desc: "Build a simple voice agent with Python in less than 10 minutes.",
-//     href: "https://docs.livekit.io/agents/start/voice-ai/",
+    title: "AI Drafting Assistant",
+    desc: "Create, review, and edit legal documents faster with intelligent suggestions directly within MS Word.",
     icon: (
       <svg
         width="24"
@@ -15,18 +108,26 @@ const features = [
         className="h-5 w-5"
       >
         <path
-          d="M7.75 3.75V20.25M3.75 9.75V14.25M12 7.75V16.25M16.25 5.75V18.25M20.25 9.75V14.25"
+          d="M4 4H20V20H4V4Z"
           stroke="currentColor"
           strokeWidth="1.5"
-          strokeLinecap="square"
+        />
+        <path
+          d="M8 8H16V10H8V8Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M8 12H16V14H8V12Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
         />
       </svg>
     ),
   },
   {
-    title: "Voice agent starter apps",
-    desc: "Bring your agent to life through a web or mobile app.",
-//     href: "https://docs.livekit.io/agents/start/frontend/#starter-apps",
+    title: "Grounded Legal Research",
+    desc: "Ask complex legal queries and receive precise answers with verified citations from statutes and case law.",
     icon: (
       <svg
         width="24"
@@ -37,58 +138,78 @@ const features = [
         className="h-5 w-5"
       >
         <path
-          d="M3 10.75H21M3 5H21.5V19.5H3V5Z"
+          d="M11 4C6.58172 4 3 7.58172 3 12C3 16.4183 6.58172 20 11 20C15.4183 20 19 16.4183 19 12C19 7.58172 15.4183 4 11 4Z"
           stroke="currentColor"
           strokeWidth="1.5"
         />
         <path
-          d="M5.75 8.375C6.09518 8.375 6.375 8.09518 6.375 7.75C6.375 7.40482 6.09518 7.125 5.75 7.125C5.40482 7.125 5.125 7.40482 5.125 7.75C5.125 8.09518 5.40482 8.375 5.75 8.375ZM8.25 8.375C8.59518 8.375 8.875 8.09518 8.875 7.75C8.875 7.40482 8.59518 7.125 8.25 7.125C7.90482 7.125 7.625 7.40482 7.625 7.75C7.625 8.09518 7.90482 8.375 8.25 8.375ZM10.75 8.375C11.0952 8.375 11.375 8.09518 11.375 7.75C11.375 7.40482 11.0952 7.125 10.75 7.125C10.4048 7.125 10.125 7.40482 10.125 7.75C10.125 8.09518 10.4048 8.375 10.75 8.375Z"
+          d="M21 21L16.65 16.65"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Strategic Analytics Engine",
+    desc: "Analyze judge rulings, counsel performance, and case outcomes to build smarter, data-driven strategies.",
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+      >
+        <path
+          d="M4 19L9 14L13 18L20 11"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Secure Case Vault",
+    desc: "Store all case files in an encrypted, centralized repository and retrieve insights instantly with natural language search.",
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+      >
+        <rect
+          x="3"
+          y="7"
+          width="18"
+          height="14"
+          rx="2"
+          stroke="currentColor"
+          strokeWidth="1.5"
+        />
+        <path
+          d="M12 11V15"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+        />
+        <circle
+          cx="12"
+          cy="18"
+          r="1"
           fill="currentColor"
-          stroke="currentColor"
-          strokeWidth="0.25"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Integrate with telephony",
-    desc: "Enable your voice agent to make or take phone calls.",
-//     href: "https://docs.livekit.io/agents/start/telephony/",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-      >
-        <path
-          d="M8.90625 3.75H3.75V5.8125C3.75 13.7861 10.2139 20.25 18.1875 20.25H20.25V15.0938L16.125 13.0312L14.5781 14.5781C12 13.5469 10.4531 12 9.42188 9.42188L10.9688 7.875L8.90625 3.75Z"
-          stroke="currentColor"
-          strokeWidth="1.5"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Deploy to LiveKit Cloud",
-    desc: "Run your agents on LiveKit's global realtime infrastructure.",
-//     href: "https://docs.livekit.io/agents/ops/deployment/",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-      >
-        <path
-          d="M7 3.75V7M7 7V10.25M7 7H3.75M7 7H10.25M19.2981 14.7019L17 17M17 17L14.7019 19.2981M17 17L14.7019 14.7019M17 17L19.2981 19.2981M17 10.25C15.2051 10.25 13.75 8.79493 13.75 7C13.75 5.20507 15.2051 3.75 17 3.75C18.7949 3.75 20.25 5.20507 20.25 7C20.25 8.79493 18.7949 10.25 17 10.25ZM3.75 13.75H10.25V20.25H3.75V13.75Z"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="square"
         />
       </svg>
     ),

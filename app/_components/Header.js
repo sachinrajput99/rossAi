@@ -7,20 +7,21 @@ const Header = () => {
         <div className="mx-auto w-full max-w-7xl">
           <div className="flex flex-row items-center justify-between gap-12 py-2">
             {/* Logo */}
-            <a href="/" className="flex items-center">
+            {/* <a href="/" className="flex items-center">
               <img
                 src="/logo.svg" // Replace with your logo path
                 alt="LiveKit"
                 className="h-6"
               />
-            </a>
+            </a> */}
+            <div class="flex-shrink-0"><h1 class="text-xl font-bold text-white">Ross AI</h1></div>
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex flex-grow items-center justify-between">
               <ul className="flex flex-row items-center gap-6">
                 <li>
                   <button className="flex items-center py-2 text-md font-semibold text-white hover:text-cyan-400 transition">
-                    Developers
+                    Home
                     <svg
                       viewBox="0 0 8 8"
                       width="16"
@@ -36,7 +37,7 @@ const Header = () => {
                 </li>
                 <li>
                   <button className="flex items-center py-2 text-md font-semibold text-white hover:text-cyan-400 transition">
-                    Company
+                    Solution
                     <svg
                       viewBox="0 0 8 8"
                       width="16"
@@ -52,25 +53,25 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="/customers"
+                    href="#"
                     className="text-md font-semibold text-white hover:text-cyan-400 transition"
                   >
-                    Customers
+                    Pricing
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/pricing"
+                    href="#"
                     className="text-md font-semibold text-white hover:text-cyan-400 transition"
                   >
-                    Pricing
+                    Docs
                   </a>
                 </li>
               </ul>
 
               {/* GitHub + Button */}
               <div className="flex items-center gap-4">
-                <a
+                {/* <a
                   href="https://github.com/livekit/agents"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -91,10 +92,10 @@ const Header = () => {
                   <span className="rounded-full bg-gray-800 px-2 py-0.5 text-xs">
                     7.3k
                   </span>
-                </a>
+                </a> */}
 
                 <a
-                  href="https://cloud.livekit.io"
+                  href="#"
                   className="flex items-center gap-2 rounded-md px-4 py-2 font-semibold text-black bg-cyan-400 shadow-md hover:shadow-lg hover:scale-105 transition"
                 >
                   <svg

@@ -26,15 +26,15 @@ export default function Page() {
      {/* <Scroller/> */}
       <TrustedBy/>
       <AILegalOS/>
-      {/* <FeatureCards/> */}
+      <FeatureCards/>
       <ScrollSections/>
       {/* <VoiceAgentSection/> */}
       <HowItWorks />
       {/* <MyGlobe/> */}
+      <Differentiators/>
       <Marquee/>
-      {/* <Differentiators/> */}
       {/* <TimelineScroll /> */}
-      {/* <HeroSection/> */}
+      
       {/* <Globe  /> */}
 
     </main>

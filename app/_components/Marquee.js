@@ -2,38 +2,74 @@
 import { motion } from "framer-motion";
 import FancyButton from "./FancyButton";
 
+// const testimonials = [
+//   {
+//     logo: "https://via.placeholder.com/80x40?text=Retell+AI",
+//     text: "We recently moved from a homegrown WebSocket stack to LiveKit Cloud, allowing us to flexibly integrate with telephony systems and offer a unified export interface across web and phone calls.",
+//     name: "Zexia Zhang",
+//     username: "CTO, Retell AI",
+//   },
+//   {
+//     logo: "https://via.placeholder.com/80x40?text=Playback",
+//     text: "Not having to worry about our ability to scale has been massive. We just have LiveKit worry about that scaling for us and have a predictable cost.",
+//     name: "Ari Borensztein",
+//     username: "Co-founder & CTO, Playback",
+//   },
+//   {
+//     logo: "https://via.placeholder.com/80x40?text=Voice",
+//     text: "Infrastructure for realtime voice assistants. The demo is 🔥",
+//     name: "Guillermo Rauch",
+//     username: "@rauchg",
+//   },
+//   {
+//     logo: "https://via.placeholder.com/80x40?text=LiveKit",
+//     text: "damn @livekit python sdk for tts and set was so smooth",
+//     name: "Ivan Leo",
+//     username: "@ivanleomk",
+//   },
+//   {
+//     logo: "https://via.placeholder.com/80x40?text=Customer",
+//     text: "LiveKit has a lot to offer. One of the best platforms for real-time AI integrations.",
+//     name: "Mojibola Olalekan",
+//     username: "@Ola_dev01",
+//   },
+// ];
+
+
 const testimonials = [
   {
-    logo: "https://via.placeholder.com/80x40?text=Retell+AI",
-    text: "We recently moved from a homegrown WebSocket stack to LiveKit Cloud, allowing us to flexibly integrate with telephony systems and offer a unified export interface across web and phone calls.",
+    logo: "https://dummyimage.com/80x40/cccccc/000000&text=Veridian+Legal",
+    text: "Ross AI seamlessly integrates into our workflow, helping us uncover critical insights faster than ever. It’s become an indispensable partner for our legal team.",
     name: "Zexia Zhang",
-    username: "CTO, Retell AI",
+    username: "CTO, Veridian Legal",
   },
   {
-    logo: "https://via.placeholder.com/80x40?text=Playback",
-    text: "Not having to worry about our ability to scale has been massive. We just have LiveKit worry about that scaling for us and have a predictable cost.",
+    logo: "https://dummyimage.com/80x40/cccccc/000000&text=Apex+Litigation",
+    text: "The ability to scale without worrying about infrastructure has been a game-changer. Ross AI delivers performance and reliability at a predictable cost.",
     name: "Ari Borensztein",
-    username: "Co-founder & CTO, Playback",
+    username: "Co-founder & CTO, Apex Litigation Partners",
   },
   {
-    logo: "https://via.placeholder.com/80x40?text=Voice",
-    text: "Infrastructure for realtime voice assistants. The demo is 🔥",
+    logo: "https://dummyimage.com/80x40/cccccc/000000&text=Crestview+Law",
+    text: "Drafting and reviewing complex documents is no longer a bottleneck. Ross AI’s grounded research ensures accuracy and confidence in every case.",
     name: "Guillermo Rauch",
-    username: "@rauchg",
+    username: "Senior Partner, Crestview Law Group",
   },
   {
-    logo: "https://via.placeholder.com/80x40?text=LiveKit",
-    text: "damn @livekit python sdk for tts and set was so smooth",
+    logo: "https://dummyimage.com/80x40/cccccc/000000&text=Stanton+Royce",
+    text: "The platform’s predictive analytics have transformed how we approach case strategy. Ross AI helps us anticipate challenges and make data-backed decisions.",
     name: "Ivan Leo",
-    username: "@ivanleomk",
+    username: "Managing Partner, Stanton & Royce",
   },
   {
-    logo: "https://via.placeholder.com/80x40?text=Customer",
-    text: "LiveKit has a lot to offer. One of the best platforms for real-time AI integrations.",
+    logo: "https://dummyimage.com/80x40/cccccc/000000&text=Blue+Harbor",
+    text: "Security and confidentiality are paramount in our practice. Ross AI’s enterprise-grade protocols give us peace of mind while leveraging AI for research and insights.",
     name: "Mojibola Olalekan",
-    username: "@Ola_dev01",
+    username: "Head of Legal Ops, Blue Harbor Counsel",
   },
 ];
+
+
 
 export default function Marquee() {
   return (
