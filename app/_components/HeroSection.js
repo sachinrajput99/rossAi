@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="space-y-4">
           <div className="relative w-full lg:w-auto">
             <a
-              href="https://blog.livekit.io/deploy-and-scale-agents-on-livekit-cloud/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="mx-auto inline-block w-fit md:mx-0"
@@ -37,7 +37,7 @@ const HeroSection = () => {
                     <div>
                       <div className="flex items-center justify-between gap-2 text-fg0">
                         <div className="text-xs font-semibold">
-                         The AI Legal OS
+                          The AI Legal OS
                         </div>
                         <svg
                           width="24"
@@ -90,16 +90,17 @@ const HeroSection = () => {
               data-driven edge in every case. Ross AI is the operating system
               for the modern law firm, built for the 99% of practices left
               behind by enterprise AI.
-            
             </p>
           </div>
         </div>
         {/* Buttons Section */}
         <div className="flex w-full mt-[16px] flex-col gap-4 md:flex-row">
-         
-          <FancyButton buttonName="Request a Demo
+          <FancyButton
+            buttonName="Request a Demo
 
-" showIcon={false} />
+"
+            showIcon={false}
+          />
 
           {/* Talk to Agent Button */}
           <div className="basis-1/2">
@@ -132,7 +133,7 @@ const HeroSection = () => {
                     T
                   </div>
                   <span className="flex text-[#B2b2b2] items-center justify-center gap-1 pl-2 text-sm font-semibold text-fg1">
-                  Start Your 14-Day Free Trial
+                    Start Your 14-Day Free Trial
                   </span>
                 </button>
               </div>
@@ -161,7 +162,7 @@ const HeroSection = () => {
                   />
                 </svg>
                 <span className="text-base hover:text-white font-semibold">
-                Legal Research AI Assistant
+                  Legal Research AI Assistant
                 </span>
               </button>
             </div>
@@ -185,7 +186,7 @@ const HeroSection = () => {
                   />
                 </svg>
                 <span className="text-base hover:text-white font-semibold">
-               Secure Case Vault (storing firm&apos;s own knowledge base)
+                  Secure Case Vault (storing firm&apos;s own knowledge base)
                 </span>
               </button>
             </div>
@@ -220,9 +221,10 @@ const HeroSection = () => {
       {/* Right Side - Placeholder Image */}
       <div className="flex-1 mt-10 md:mt-0">
         <div className="w-full h-96 rounded-xl bg-gradient-to-br from-gray-800 to-black flex items-center justify-center">
-          <span className="text-gray-500">
+          {/* <span className="text-gray-500">
             [ Add Image / Illustration Here ]
-          </span>
+          </span> */}
+          <img src="/hero.png" alt="Hero image" />
         </div>
       </div>
     </section>

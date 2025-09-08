@@ -1,143 +1,10 @@
-// "use client";
-// import { useState, useEffect } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
 
-// const steps = [
-//   {
-//     title: "User speaks to agent via app, browser, or phone call",
-//   },
-//   {
-//     title: "User speech is streamed from device to agent",
-//     desc: "Voice, video, and text data travel via WebRTC through LiveKit’s global edge network with less than 100ms latency.",
-//   },
-//   {
-//     title: "Agent receives user speech and runs your custom business logic",
-//   },
-//   {
-//     title: "Agent responds back to the user",
-//   },
-// ];
-
-// export default function HowItWorks() {
-//   const [stepIndex, setStepIndex] = useState(0);
-//   const [scrolling, setScrolling] = useState(false);
-
-//   // Scroll lock (jaise pehle tha)
-//   useEffect(() => {
-//     const preventScroll = (e) => {
-//       if (stepIndex > 0 && stepIndex < steps.length - 1) {
-//         e.preventDefault();
-//       }
-//     };
-//     window.addEventListener("wheel", preventScroll, { passive: false });
-//     return () => window.removeEventListener("wheel", preventScroll);
-//   }, [stepIndex]);
-
-//   // Step navigation with scroll
-//   useEffect(() => {
-//     const handleScroll = (e) => {
-//       if (scrolling) return;
-//       setScrolling(true);
-
-//       if (e.deltaY > 0) {
-//         setStepIndex((prev) =>
-//           prev < steps.length - 1 ? prev + 1 : prev
-//         );
-//       } else if (e.deltaY < 0) {
-//         setStepIndex((prev) => (prev > 0 ? prev - 1 : prev));
-//       }
-
-//       setTimeout(() => setScrolling(false), 600);
-//     };
-
-//     window.addEventListener("wheel", handleScroll);
-//     return () => window.removeEventListener("wheel", handleScroll);
-//   }, [scrolling]);
-
-//   return (
-//     <section className="relative min-h-screen bg-black text-white">
-//       <div className="sticky top-0 flex h-screen items-center justify-center">
-//         <div className="grid grid-cols-2 gap-12 w-4/5">
-//           {/* LEFT CONTENT */}
-//           <div className="w-full max-w-xl">
-//             {/* Heading */}
-//             <h2 className="text-4xl font-light mb-10">
-//               <span className="text-cyan-400">How </span>
-//               it works
-//             </h2>
-
-//             {/* Steps */}
-//             <div className="flex flex-col gap-6">
-//               {steps.map((step, idx) => (
-//                 <div key={idx} className="flex items-start gap-4">
-//                   {/* Step number */}
-//                   <div
-//                     className={`w-8 h-8 flex items-center justify-center rounded-full border-2 text-sm font-bold shrink-0
-//                       ${
-//                         idx === stepIndex
-//                           ? "border-white text-white"
-//                           : "border-gray-600 text-gray-400"
-//                       }`}
-//                   >
-//                     {idx + 1}
-//                   </div>
-
-//                   {/* Step content */}
-//                   <div>
-//                     <p
-//                       className={`text-base ${
-//                         idx === stepIndex ? "font-semibold" : "text-gray-400"
-//                       }`}
-//                     >
-//                       {step.title}
-//                     </p>
-//                     {step.desc && (
-//                       <p className="text-gray-500 text-sm mt-1">{step.desc}</p>
-//                     )}
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-
-//             {/* Buttons */}
-//             <div className="flex gap-3 mt-10">
-//               <a
-//                 href="https://docs.livekit.io/agents/"
-//                 target="_blank"
-//                 rel="noreferrer"
-//                 className="px-4 py-2 rounded-lg border border-gray-600 bg-gray-800 hover:bg-gray-700 text-sm"
-//               >
-//                 View documentation
-//               </a>
-//               <a
-//                 href="https://github.com/livekit/agents"
-//                 target="_blank"
-//                 rel="noreferrer"
-//                 className="px-4 py-2 rounded-lg border border-gray-600 bg-gray-800 hover:bg-gray-700 text-sm"
-//               >
-//                 livekit/agents
-//               </a>
-//             </div>
-//           </div>
-
-//           {/* RIGHT SIDE PLACEHOLDER IMAGE */}
-//           <div className="flex items-center justify-center">
-//             <img
-//               src="https://via.placeholder.com/400x300"
-//               alt="Placeholder"
-//               className="rounded-xl shadow-lg object-cover"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 "use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FancyButton from "./FancyButton";
+
 
 const steps = [
   {
@@ -306,7 +173,9 @@ export default function HowItWorks() {
             </AnimatePresence>
           </div>
         </div>
+          
       </div>
+    
     </section>
   );
 }

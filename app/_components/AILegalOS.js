@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { FileText, Search, Brain } from "lucide-react";
+import { FileText, Search, Brain, Radius } from "lucide-react";
 
 const AILegalOS = () => {
   const visualRef = useRef(null);
@@ -38,15 +38,15 @@ const AILegalOS = () => {
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Ross AI is more than a tool; it&apos;s a foundational platform that
-            transforms your firm&apos;s scattered data into a strategic asset. It
-            connects every phase of your workflow, from intake to argument,
+            transforms your firm&apos;s scattered data into a strategic asset.
+            It connects every phase of your workflow, from intake to argument,
             providing a single source of truth and intelligence.
           </p>
         </div>
 
         {/* Central Visual */}
         <div className="flex justify-center mb-16">
-          <div
+          {/* <div
             ref={visualRef}
             className="relative w-96 h-96 flex items-center justify-center"
           >
@@ -60,7 +60,15 @@ const AILegalOS = () => {
             <div className="absolute inset-0 rounded-full border border-blue-500/30 animate-spin-slow"></div>
             <div className="absolute inset-8 rounded-full border border-purple-500/30 animate-spin-reverse"></div>
             <div className="absolute inset-16 rounded-full border border-blue-400/20 animate-spin-slow"></div>
-          </div>
+          </div> */}
+          <video
+            src="/hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{ width: "50%", height: "auto",borderRadius:"50%" }}
+          ></video>
         </div>
 
         {/* Feature Grid */}

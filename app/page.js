@@ -26,10 +26,10 @@ export default function Page() {
      {/* // <Scroller/> */}
       <TrustedBy />
       <AILegalOS />
-      <FeatureCards />
       <ScrollSections />
      {/* // <VoiceAgentSection/> */}
       <HowItWorks />
+      <FeatureCards />
       {/* <MyGlobe/> */}
       <Differentiators />
       <Marquee />
