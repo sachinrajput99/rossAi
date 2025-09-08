@@ -1,8 +1,7 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef } from 'react';
-import { FileText, Search, Brain } from 'lucide-react';
-
+import React, { useEffect, useRef } from "react";
+import { FileText, Search, Brain } from "lucide-react";
 
 const AILegalOS = () => {
   const visualRef = useRef(null);
@@ -12,7 +11,7 @@ const AILegalOS = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-pulse-glow');
+            entry.target.classList.add("animate-pulse-glow");
           }
         });
       },
@@ -38,9 +37,10 @@ const AILegalOS = () => {
             An Integrated Command Center for Your Entire Practice
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ross AI is more than a tool; it's a foundational platform that transforms your firm's 
-            scattered data into a strategic asset. It connects every phase of your workflow, from 
-            intake to argument, providing a single source of truth and intelligence.
+            Ross AI is more than a tool; it&apos;s a foundational platform that
+            transforms your firm&apos;s scattered data into a strategic asset. It
+            connects every phase of your workflow, from intake to argument,
+            providing a single source of truth and intelligence.
           </p>
         </div>
 
@@ -70,9 +70,12 @@ const AILegalOS = () => {
               <div className="flex justify-center mb-4">
                 <FileText className="w-8 h-8 text-blue-500" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">Drafting & Analysis</h3>
+              <h3 className="text-lg font-semibold mb-3">
+                Drafting & Analysis
+              </h3>
               <p className="text-gray-400 leading-relaxed">
-                Generate and review complex legal documents in minutes, not hours.
+                Generate and review complex legal documents in minutes, not
+                hours.
               </p>
             </div>
           </div>
@@ -84,7 +87,8 @@ const AILegalOS = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Grounded Research</h3>
               <p className="text-gray-400 leading-relaxed">
-                Get reliable, citable answers from case law and your own private case files. No hallucinations. Ever.
+                Get reliable, citable answers from case law and your own private
+                case files. No hallucinations. Ever.
               </p>
             </div>
           </div>
@@ -94,15 +98,17 @@ const AILegalOS = () => {
               <div className="flex justify-center mb-4">
                 <Brain className="w-8 h-8 text-blue-500" />
               </div>
-              <h3 className="text-lg font-semibold mb-3">Strategic Intelligence</h3>
+              <h3 className="text-lg font-semibold mb-3">
+                Strategic Intelligence
+              </h3>
               <p className="text-gray-400 leading-relaxed">
-                Move beyond research to foresight. Predict case outcomes, analyze judicial patterns, and build data-driven strategies that win.
+                Move beyond research to foresight. Predict case outcomes,
+                analyze judicial patterns, and build data-driven strategies that
+                win.
               </p>
             </div>
           </div>
         </div>
-
-     
       </div>
     </section>
   );

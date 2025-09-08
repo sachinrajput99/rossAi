@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 import MyGlobe from "./MyGlobe";
 const Differentiators = () => {
-  const globeRef = useRef<HTMLDivElement>(null);
+  const globeRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-globe-rotate');
+            entry.target.classList.add("animate-globe-rotate");
           }
         });
       },
@@ -61,15 +61,18 @@ const Differentiators = () => {
               </div>
             </div>
           </div> */}
-   <MyGlobe/>
+          <MyGlobe />
           {/* Pillars around the globe */}
           <div className="flex  gap-12 lg:gap-8">
             {/* Pillar 1 */}
             <div className="lg:col-span-1 text-center lg:text-left">
-              <h4 className="text-2xl font-bold mb-4">Accessible & Affordable</h4>
+              <h4 className="text-2xl font-bold mb-4">
+                Accessible & Affordable
+              </h4>
               <p className="text-gray-300 leading-relaxed">
-                Transparent, tiered SaaS pricing that fits the budgets of solo, small, and mid-sized firms. 
-                No opaque enterprise contracts or six-figure setup fees. Start for free and scale as you grow.
+                Transparent, tiered SaaS pricing that fits the budgets of solo,
+                small, and mid-sized firms. No opaque enterprise contracts or
+                six-figure setup fees. Start for free and scale as you grow.
               </p>
             </div>
 
@@ -77,8 +80,10 @@ const Differentiators = () => {
             <div className="lg:col-span-1 text-center lg:text-left lg:order-3">
               <h4 className="text-2xl font-bold mb-4">Secure & Confidential</h4>
               <p className="text-gray-300 leading-relaxed">
-                Built on a foundation of enterprise-grade security. SOC 2 and ISO 27001 compliant. 
-                We will never train our AI models on your confidential client data—a commitment backed by our contractual guarantee.
+                Built on a foundation of enterprise-grade security. SOC 2 and
+                ISO 27001 compliant. We will never train our AI models on your
+                confidential client data—a commitment backed by our contractual
+                guarantee.
               </p>
             </div>
 
@@ -86,8 +91,10 @@ const Differentiators = () => {
             <div className=" text-center lg:max-w-md lg:mx-auto">
               <h4 className="text-2xl font-bold mb-4">Open & Flexible</h4>
               <p className="text-gray-300 leading-relaxed text-left">
-                Powered by a state-of-the-art open-source core, Ross AI avoids vendor lock-in and delivers faster innovation. 
-                Our flexible architecture gives your firm a durable, long-term competitive edge.
+                Powered by a state-of-the-art open-source core, Ross AI avoids
+                vendor lock-in and delivers faster innovation. Our flexible
+                architecture gives your firm a durable, long-term competitive
+                edge.
               </p>
             </div>
           </div>

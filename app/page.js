@@ -20,23 +20,22 @@ import Globe from "react-globe.gl";
 import AILegalOS from "./_components/AILegalOS";
 export default function Page() {
   return (
-    <main className="mt-24 bg-black">
+    <div className="mt-24 bg-black">
       <Header />
       <HeroSection />
-     {/* <Scroller/> */}
-      <TrustedBy/>
-      <AILegalOS/>
-      <FeatureCards/>
-      <ScrollSections/>
-      {/* <VoiceAgentSection/> */}
+     {/* // <Scroller/> */}
+      <TrustedBy />
+      <AILegalOS />
+      <FeatureCards />
+      <ScrollSections />
+     {/* // <VoiceAgentSection/> */}
       <HowItWorks />
       {/* <MyGlobe/> */}
-      <Differentiators/>
-      <Marquee/>
-      {/* <TimelineScroll /> */}
-      
-      {/* <Globe  /> */}
+      <Differentiators />
+      <Marquee />
+     {/* // <TimelineScroll /> */}
 
-    </main>
+     {/* // <Globe  /> */}
+    </div>
   );
 }
