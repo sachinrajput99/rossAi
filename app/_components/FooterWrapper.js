@@ -117,12 +117,7 @@ const footerLinksData = [
       { label: "Contact Us", href: "#" },
     ],
   },
-  {
-    title: "Ross AI",
-    links: [],
-  },
 ];
-
 
 // A reusable component for the LiveKit logo SVG.
 const LiveKitLogo = () => (
@@ -148,10 +143,7 @@ const LiveKitLogo = () => (
       fill="#745EFF"
     ></path>
     <path d="M24 0H19.1992V4.80075H24V0Z" fill="#745EFF"></path>
-    <path
-      d="M24 19.1992H19.1992V24H24V19.1992Z"
-      fill="#745EFF"
-    ></path>
+    <path d="M24 19.1992H19.1992V24H24V19.1992Z" fill="#745EFF"></path>
     <path
       d="M4.80075 19.1992V14.4004V9.59962V4.80075V0H0V4.80075V9.59962V14.4004V19.1992V24H4.80075H9.59963H14.4004V19.1992H9.59963H4.80075Z"
       fill="#E6E8EB"
@@ -226,12 +218,12 @@ const Footer = () => {
           <div className="min-w-52 flex-1 space-y-6">
             <a aria-label="LiveKit homepage" href="/" className="inline-block">
               {/* Using the new LiveKitLogo component */}
-              <LiveKitLogo />
+              {/* <LiveKitLogo /> */}
+              RossAi
             </a>
             {/* <p className="text-balance text-sm text-[#A0A3A8]"> */}
             <p className=" text-sm text-[#A0A3A8]">
-             AI-powered solutions transforming the legal industry.
-              
+              AI-powered solutions transforming the legal industry.
             </p>
             <div className="space-y-3">
               <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-[#A0A3A8]">
@@ -253,7 +245,11 @@ const Footer = () => {
           {/* Dynamically rendered link columns using a new component */}
           <div className="grid w-full max-w-4xl grid-cols-2 gap-x-4 gap-y-12 md:grid-cols-3 lg:grid-cols-5 text-[#E6E8EB]">
             {footerLinksData.map((section, index) => (
-              <FooterLinkSection key={`${section.title}-${index}`} title={section.title} links={section.links} />
+              <FooterLinkSection
+                key={`${section.title}-${index}`}
+                title={section.title}
+                links={section.links}
+              />
             ))}
           </div>
         </div>
